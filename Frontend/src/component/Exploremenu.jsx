@@ -33,7 +33,7 @@ const Exploremenu = ({ category, setcategory }) => {
                     </div>
                 ))}
             </div>
-            <hr className=' bg-slate-200 rounded-lg' />
+            <hr className=' bg-slate-200  rounded-lg' />
         </div>
     );
 };
