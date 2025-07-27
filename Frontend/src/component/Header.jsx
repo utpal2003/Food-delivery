@@ -4,37 +4,35 @@ import { assets } from '../assets/frontend_assets/assets';
 const Header = () => {
   return (
     <div className='relative w-full overflow-hidden'>
-      <div className=' flex justify-center items-center'>
+      {/* Background Image */}
+      <div className='w-full h-[250px] sm:h-[400px] md:h-[500px] lg:h-[600px] rounded-2xl overflow-hidden '>
         <img
           src={assets.header_img}
           alt="Delicious food spread"
-          className='w-full h-auto object-cover max-h-[500px] md:max-h-[600px] lg:max-h-[700px]'
+          className='w-full h-full object-cover'
         />
       </div>
 
-      {/* Bottom-left content */}
-      <div className='absolute left-4 bottom-6 md:bottom-8 flex flex-col justify-center items-center text-white p-4 text-center 
-                      sm:left-6 sm:items-start sm:text-left sm:pl-8 
-                      md:pl-10 lg:pl-16 animate-fadeIn '>
+      {/* Overlay Text */}
+      <div className='absolute inset-0 flex flex-col justify-end sm:justify-center text-white px-4 sm:px-8 lg:px-16 pb-6 sm:pb-10 lg:pb-16 animate-fadeIn'>
 
-        <h2 className="text-2xl sm:text-2xl md:text-5xl lg:text-6xl font-bold leading-tight mb-2 lg:mb-3 drop-shadow-lg flex flex-col ">
+        <h2 className="text-xl sm:text-3xl md:text-5xl lg:text-6xl font-bold leading-tight mb-2 lg:mb-4 drop-shadow-lg text-center sm:text-left">
           <p>Order Your</p>
           <p><span className="text-orange-400">Favorite Food</span> Here</p>
-
         </h2>
 
-        <p className="max-w-xs sm:max-w-sm md:max-w-lg lg:max-w-2xl text-sm sm:text-base md:text-lg lg:text-xl mb-6 leading-relaxed drop-shadow-md">
+        <p className="max-w-md sm:max-w-lg md:max-w-2xl text-xs sm:text-base md:text-lg lg:text-xl mb-5 leading-relaxed drop-shadow-md text-center sm:text-left">
           Choose from a diverse menu featuring a delectable array of dishes crafted with the finest ingredients and culinary expertise.
         </p>
 
-        <button className="bg-gray-200 text-gray-600 px-5 py-2 sm:px-6 sm:py-3 rounded-full text-sm sm:text-base font-semibold 
-                          hover:bg-orange-500 transition duration-300 ease-in-out shadow-lg transform hover:scale-105">
-          View Menu
-        </button>
+        <div className='flex justify-center sm:justify-start'>
+          <button className="bg-gray-200 text-gray-600 px-5 py-2 sm:px-6 sm:py-3 rounded-full text-sm sm:text-base font-semibold 
+                            hover:bg-orange-500 transition duration-300 ease-in-out shadow-lg transform hover:scale-105">
+            View Menu
+          </button>
+        </div>
+        
       </div>
-
-
-
     </div>
   );
 };
