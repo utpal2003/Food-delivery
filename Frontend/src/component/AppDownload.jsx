@@ -3,7 +3,7 @@ import { assets } from '../assets/frontend_assets/assets'
 
 const AppDownload = () => {
     return (
-        <div className='w-full mt-16 flex flex-col items-center justify-center px-4'>
+        <div className='w-full mt-16 flex flex-col items-center justify-center px-4 ' id='mobile-App'>
             
             {/* Title */}
             <p className='text-center text-2xl sm:text-3xl font-medium'>

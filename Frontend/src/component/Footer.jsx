@@ -3,7 +3,7 @@ import { assets } from '../assets/frontend_assets/assets'
 
 const Footer = () => {
     return (
-        <footer className="w-full bg-[#1e1e1e] text-gray-300 pt-12 mt-20" id="footer">
+        <footer className="w-full bg-[#1e1e1e] text-gray-300 pt-12 mt-20" id="contact-us">
             <div className="max-w-screen-xl  mx-auto px-2 md:px-10">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-10 px-6 md:px-20 pb-10">
 

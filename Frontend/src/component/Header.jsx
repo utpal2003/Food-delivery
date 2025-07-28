@@ -3,7 +3,7 @@ import { assets } from '../assets/frontend_assets/assets';
 
 const Header = () => {
   return (
-    <div className='relative w-full overflow-hidden'>
+    <div className='relative w-full overflow-hidden' id='home'>
       {/* Background Image */}
       <div className='w-full h-[250px] sm:h-[400px] md:h-[500px] lg:h-[600px] rounded-2xl overflow-hidden '>
         <img
